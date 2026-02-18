@@ -122,15 +122,14 @@ public class PracticeProblemTest {
    @Test
    public void q4Test2()
    {
-      InputStream originalIn = System.in;
-      String data = "Kalisz\nMr.\n99\n";
+      String data = "Kalisz\nMr\n99";
       System.setIn(new ByteArrayInputStream(data.getBytes()));
 
       // action
       PracticeProblem.q4();
 
       // assertion
-      assertEquals("Input a first name: Input a last name: Input an age: Mr., Kalisz - 99\n", bos.toString());
+      assertEquals("Input a first name: Input a last name: Input an age: Mr, Kalisz - 99\n", bos.toString());
    }
 
    @Test
