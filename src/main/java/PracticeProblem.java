@@ -38,10 +38,12 @@ public class PracticeProblem {
 	public static void q3() {
 		//Write question 3 code here
 	Scanner input = new Scanner(System.in);
-	System.out.print("Input a radius ");
+	System.out.print("Input a radius: ");
 	double rad;
 	rad = input.nextDouble();
-	System.out.println(2 * 3.14 * rad);
+	double circle;
+	circle = (2 * 3.14);
+	System.out.println(circle * rad);
 	
 	}
 
