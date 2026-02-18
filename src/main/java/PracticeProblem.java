@@ -44,6 +44,7 @@ public class PracticeProblem {
 	double circle;
 	circle = (2 * 3.14);
 	System.out.println(circle * rad);
+	System.out.println(3.14 * (rad * rad));
 	
 	}
 
@@ -61,14 +62,14 @@ public class PracticeProblem {
 	String age;
 	age = input.nextLine();
 	String infor;
-	infor = (lname  + fname + age);
+	infor = (lname + ", " + fname + " - " + age);
 	System.out.println(infor);
 	}
 
 	public static void q5() {
 		//Write question 5 code here
 	Scanner input = new Scanner(System.in);
-	System.out.print("Input a first name: ");
+	System.out.print("Input a name: ");
 	String _name;
 	_name = input.nextLine();
 	System.out.print("Input an age: ");
@@ -77,7 +78,8 @@ public class PracticeProblem {
 	int _iq;
 	_iq = (_age);
 	_age = (_age + 3);
-	System.out.println(_name + _age + _iq);
+	System.out.println(_name + _age);
+	System.out.println(_iq);
 	}
 
 }
